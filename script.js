@@ -73,3 +73,79 @@ console.log("substraction",3-4)
 console.log("multiplication",3*4)
 console.log("division",3/4)
 console.log("modulus",3%4)
+
+//2)Assignment operator
+let a=10
+console.log("addition=",a+=10) // 10+10=20
+console.log("substraction",a-=10)//20-10=10
+console.log("multiplication",a*=10)//10*10=100
+console.log("division",a/=10)//100/10=10
+console.log("modulus",a%=10)//10%10=0
+
+//3)comparisson operator
+let num=5
+let num1=10
+
+console.log(5==10)//false
+console.log(5===10)//false
+
+let num2=13
+let num4="13"
+
+console.log(num2==num4)//true
+console.log(num2===num4)//false
+
+console.log(num>num1)//false
+console.log(num<num1)//true
+
+console.log(num2>=num4)//true //doesnt check the datattype only check in strict === 
+
+console.log(num4<=num2)//true
+
+console.log(num2!=num4)//false 13!="13"
+
+console.log(num2!==num4)//true  13!=="13"
+
+//logical operator
+let isLogin=true
+let notLogin=false
+
+console.log(isLogin&&notLogin) //false
+console.log(isLogin||notLogin)// true
+
+//bitwise operator
+let b=5 
+let c=1
+
+console.log(b&c)  // 8 4 2 1
+                  // 0 1 0 1=5
+                  // 0 0 0 1=1
+                  // -------
+                  // 0 0 0 1
+                  //answer=1
+
+console.log(b|c)  // 8 4 2 1
+                  // 0 1 0 1=5
+                  // 0 0 0 1=1
+                  // -------
+                  // 0 1 0 1
+                  //answer=5
+
+console.log(b^c)  // 8 4 2 1
+                  // 0 1 0 1=5
+                  // 0 0 0 1=1
+                  // -------
+                  // 0 1 0 0
+                  //answer=4
+
+console.log(~b)  //~x=-(x+1)
+                 //answer=-6
+
+
+//Ternary operator
+
+let age=18;
+
+let vote=age>=18?"eligible for vote":"not eligible for vote";
+
+console.log(vote)
