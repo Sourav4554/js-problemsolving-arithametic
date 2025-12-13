@@ -433,7 +433,7 @@ const IncreasedPrice = 102 * 0.06;
 console.log(`New price= ${IncreasedPrice + petrolPrice}`);
 
 /**
- * 33)50. A student has scores in 4 subjects. Check if average ≥ 90 to award a scholarship.
+ * 33) A student has scores in 4 subjects. Check if average ≥ 90 to award a scholarship.
  */
 
 const subject1 = 100;

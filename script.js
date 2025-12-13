@@ -149,3 +149,74 @@ let age=18;
 let vote=age>=18?"eligible for vote":"not eligible for vote";
 
 console.log(vote)
+
+//comma operator (,  ,)
+
+let z1,z2;
+
+const result3=(z1=10,z2=4,z1+z2)
+console.log(result3)
+
+
+//unary operator
+
+//post increment
+let a5=30;
+let b4=a5++;
+console.log(b4)//30
+console.log(a5)//31
+
+//pre-increment
+let c3=++a5
+console.log(c3)//32
+console.log(a5)//32
+
+//post decrement
+let a6=30;
+let b6=a6--;
+console.log(b6)//30
+console.log(a6)//29
+
+//pre decrement
+
+let b7=--a6;
+console.log(b7)//28
+console.log(a6)//28
+
+
+//relational operator
+
+const obj={
+name:"sourav",
+age:69
+}
+
+console.log("name" in obj) //true
+console.log("mark" in obj)//false
+
+console.log(obj instanceof Object) //true
+console.log(obj instanceof Array) //false
+
+//string operators
+let m1=77;
+console.log("mark is"+" "+m1) //mark is 77
+
+let str='hello'
+str+='world'
+
+console.log(str)//hello world
+
+//chaining operator (?.)
+
+const person={
+name:"sourave",
+age:33,
+adress:{
+hname:"karuvelil"
+}
+}
+
+console.log(person.adress?.panchayath) // undefined
+console.log(person.adress?.hname) //karuvellil
+
+
