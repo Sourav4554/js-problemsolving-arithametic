@@ -103,7 +103,8 @@ const newSalary = IncreaseAmount + CurrentSalary;
 console.log(" increases a salary by 20%", newSalary);
 
 /**
- * 12)A shopkeeper increases the price of an item by 18%. If the original price is 450, find the new price.
+ * 12)A shopkeeper increases the price of an item by 18%. If the original price is 450,
+ *  find the new price.
  *
  *
  */
@@ -141,7 +142,7 @@ console.log("milage", milage);
 const currentBill = 1000;
 const tax = 0.07;
 const numberOfpeople = 4;
-const newBillIncludeTax = 1000 * 0.07;
+const newBillIncludeTax = currentBill69 * tax;
 const newBill = currentBill + newBillIncludeTax;
 const amount = newBill / numberOfpeople;
 

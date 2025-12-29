@@ -195,3 +195,94 @@ const palindrome = (string) => {
 };
 
 palindrome("malayala");
+
+//23.find the largest and smallest element in an array
+
+const largest=(...numbers)=>{
+let max=numbers[0]
+let min=numbers[0]
+for(let i=1;i<numbers.length;i++){
+    if(max<numbers[i]){
+     max=numbers[i]
+    }else if(min>numbers[i]){
+    min=numbers[i]
+    }
+  
+ }
+ console.log(`smallest = ${min}`)
+ return max;
+}
+console.log(`largest = ${largest(4,5,67,89,12)}`)
+
+//24.Write a function addNumbers(a, b) that takes two numbers as parameters and returns their sum
+
+
+const addNumbers=(a, b)=>{
+return a+b
+}
+console.log(`sum`,addNumbers(10,5))
+
+//25.Write a function isEven(num) that takes a number as a parameter and returns true if the
+  //number is even and false if it is odd.
+
+  const isEven=(num)=>{
+  if(num%2===0){
+  return true;
+  }else{
+  return false;
+  }
+  }
+
+console.log(!isEven(8)?'its a odd number':'its even number')
+
+/*26.Create a function celsiusToFahrenheit(celsius) that converts Celsius to Fahrenheit using
+the formula:
+F=(C×9/5)+32*/
+
+const celsiusToFahrenheit=(celsius)=>{
+ console.log(`fahrenheit= ${(celsius*9/5)+32}`)
+}
+celsiusToFahrenheit(25)
+
+/**
+ * 27.Write a function greet(name) that takes a name as input and returns a greeting message.
+ */
+const  greet=(name)=>{
+console.log(`hello ${name}`)
+}
+greet('sourav')
+
+/**
+ * 28.Write a function findMax(a, b) that takes two numbers and returns the larger of the two.
+ */
+const findMax=(a, b) =>{
+if(a==b){
+return 'both are same'
+}else if(a>b){
+return a;
+}else{
+return b;
+}
+}
+console.log(`largest number= ${findMax(10,20)}`)
+
+/**
+ * 29.Write a function hasProperty(obj, prop) that checks if an object has a specific property
+      and returns true or false.
+ */
+
+const hasProperty=(obj, prop)=>{
+if(prop in obj){
+return true;
+}else{
+return false;
+}
+}
+
+const obj={
+name:'sourav',
+age:20
+}
+
+
+console.log(hasProperty(obj,'age')?'yes contain property':'no doesnt contain property')
