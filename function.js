@@ -150,3 +150,45 @@ const Sum=(num)=>{
   return base*power(base,exponent-1)
   }
   console.log(`power= ${power(5,3)}`)
+
+  //immediate evoke function
+
+  // (function() {
+  //   var message = "This function runs immediately.";
+  //   console.log(message); // Output: This function runs immediately.
+  // })();
+
+  
+  
+  // (
+  // function(){
+  //   console.log('dtksrtest')
+  // }  
+  // )()
+
+  //scope chain
+
+function outer(){
+  let x=10;
+function inner(){
+  let x=20
+  console.log(x)
+}
+console.log(x)
+inner()
+}
+outer()
+
+//closure
+
+const increment=()=>{
+let count=0;
+return function(){
+ return ++count;
+}
+}
+
+const counter=increment();
+
+console.log(counter())
+console.log(counter())
